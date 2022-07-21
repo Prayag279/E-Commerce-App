@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/scroll_layout"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        tools:context=".ui.myproduct.MyProductFragment"
+        android:orientation="vertical">
+
+        <!--My product 1 Start-->
+            <LinearLayout
+        android:id="@+id/myproduct_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/twelvepromax"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/meduim"
+                    android:text="iPhone 12 Pro Max"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/display_price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="@dimen/xsmall"
+                        android:text="₹ 1,27,302.00"
+                        android:textColor="@color/currentPrice"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:id="@+id/display_save_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:padding="@dimen/xsmall"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Save ₹2,598 (2%)"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/display_quantity_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:padding="@dimen/xsmall"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Qty : 50"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xmeduim"
+                android:paddingRight="@dimen/xmeduim"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <!--My product 1 editing part-->
+
+            <!--My product MODIFICATION Start-->
+            <LinearLayout
+                android:id="@+id/modify_layout_1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/price_1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text=""
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:minEms="10"
+                            android:padding="@dimen/xmeduim"
+                            android:layout_gravity="center"
+                            android:background="@drawable/input_design" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/min_1"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:onClick="decreaseQuantity"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/quantity_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="3"
+                            android:maxEms="3"
+                            android:maxLength="5"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_1"
+                            android:onClick="increaseQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                <Button
+                    android:id="@+id/save_1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/meduim"
+                    android:background="@drawable/input_design"
+                    android:text="Save"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--My product MODIFICATION End-->
+            <LinearLayout
+            android:id="@+id/edit_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/modify_1"
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Modify"/>
+
+            <Button
+                android:id="@+id/delete_1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Delete"/>
+        </LinearLayout>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:padding="@dimen/xsmall"
+            android:background="@drawable/strike_through_line"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <!--My product 1 End-->
+
+
+
+
+        <!--My product 2 Start-->
+        <LinearLayout
+            android:id="@+id/myproduct_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/products_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twelvepromax"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/meduim"
+                        android:text="iPhone 12 Pro Max"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/display_price_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 1,27,302.00"
+                            android:textColor="@color/currentPrice"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Save ₹2,598 (2%)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/display_quantity_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Qty : 50"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xmeduim"
+                android:paddingRight="@dimen/xmeduim"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <!--My product 1 editing part-->
+
+            <!--My product MODIFICATION Start-->
+            <LinearLayout
+                android:id="@+id/modify_layout_2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/price_2"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text=""
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:minEms="10"
+                            android:padding="@dimen/xmeduim"
+                            android:layout_gravity="center"
+                            android:background="@drawable/input_design" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/min_2"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:onClick="decreaseQuantity"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/quantity_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="3"
+                            android:maxEms="3"
+                            android:maxLength="5"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_2"
+                            android:onClick="increaseQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/save_2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/meduim"
+                        android:background="@drawable/input_design"
+                        android:text="Save"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--My product MODIFICATION End-->
+            <LinearLayout
+                android:id="@+id/edit_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/modify_2"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/meduim"
+                    android:background="@drawable/input_design"
+                    android:text="Modify"/>
+
+                <Button
+
+                    android:id="@+id/delete_2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_design"
+                    android:layout_margin="@dimen/meduim"
+                    android:text="Delete"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:padding="@dimen/xsmall"
+            android:background="@drawable/strike_through_line"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <!--My product 2 End-->
+
+
+        <!--My product 3 Start-->
+        <LinearLayout
+            android:id="@+id/myproduct_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/products_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twelvepromax"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/meduim"
+                        android:text="iPhone 12 Pro Max"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/display_price_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 1,27,302.00"
+                            android:textColor="@color/currentPrice"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Save ₹2,598 (2%)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/display_quantity_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Qty : 50"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xmeduim"
+                android:paddingRight="@dimen/xmeduim"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <!--My product 1 editing part-->
+
+            <!--My product MODIFICATION Start-->
+            <LinearLayout
+                android:id="@+id/modify_layout_3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/price_3"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text=""
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:minEms="10"
+                            android:padding="@dimen/xmeduim"
+                            android:layout_gravity="center"
+                            android:background="@drawable/input_design" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/min_3"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:onClick="decreaseQuantity"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/quantity_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="3"
+                            android:maxEms="3"
+                            android:maxLength="5"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_3"
+                            android:onClick="increaseQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/save_3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/meduim"
+                        android:background="@drawable/input_design"
+                        android:text="Save"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--My product MODIFICATION End-->
+            <LinearLayout
+                android:id="@+id/edit_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/modify_3"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/meduim"
+                    android:background="@drawable/input_design"
+                    android:text="Modify"/>
+
+                <Button
+                    android:id="@+id/delete_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_design"
+                    android:layout_margin="@dimen/meduim"
+                    android:text="Delete"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:padding="@dimen/xsmall"
+            android:background="@drawable/strike_through_line"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <!--My product 3 End-->
+
+
+        <!--My product 4 Start-->
+        <LinearLayout
+            android:id="@+id/myproduct_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/products_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twelvepromax"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/meduim"
+                        android:text="iPhone 12 Pro Max"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/display_price_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 1,27,302.00"
+                            android:textColor="@color/currentPrice"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Save ₹2,598 (2%)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/display_quantity_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Qty : 50"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xmeduim"
+                android:paddingRight="@dimen/xmeduim"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <!--My product 1 editing part-->
+
+            <!--My product MODIFICATION Start-->
+            <LinearLayout
+                android:id="@+id/modify_layout_4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/price_4"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text=""
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:minEms="10"
+                            android:padding="@dimen/xmeduim"
+                            android:layout_gravity="center"
+                            android:background="@drawable/input_design" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/min_4"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:onClick="decreaseQuantity"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/quantity_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="3"
+                            android:maxEms="3"
+                            android:maxLength="5"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_4"
+                            android:onClick="increaseQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/save_4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/meduim"
+                        android:background="@drawable/input_design"
+                        android:text="Save"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--My product MODIFICATION End-->
+            <LinearLayout
+                android:id="@+id/edit_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/modify_4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/meduim"
+                    android:background="@drawable/input_design"
+                    android:text="Modify"/>
+
+                <Button
+
+                    android:id="@+id/delete_4"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_design"
+                    android:layout_margin="@dimen/meduim"
+                    android:text="Delete"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:padding="@dimen/xsmall"
+            android:background="@drawable/strike_through_line"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <!--My product 4 End-->
+
+        <!--My product 5 Start-->
+        <LinearLayout
+            android:id="@+id/myproduct_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/products_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twelvepromax"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/meduim"
+                        android:text="iPhone 12 Pro Max"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/display_price_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 1,27,302.00"
+                            android:textColor="@color/currentPrice"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Save ₹2,598 (2%)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/display_quantity_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="@dimen/xsmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Qty : 50"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xmeduim"
+                android:paddingRight="@dimen/xmeduim"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+            <!--My product 1 editing part-->
+
+            <!--My product MODIFICATION Start-->
+            <LinearLayout
+                android:id="@+id/modify_layout_5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/price_5"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text=""
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:minEms="10"
+                            android:padding="@dimen/xmeduim"
+                            android:layout_gravity="center"
+                            android:background="@drawable/input_design" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/large"
+                            android:layout_margin="@dimen/xmeduim"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/min_5"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:onClick="decreaseQuantity"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/quantity_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="3"
+                            android:maxEms="3"
+                            android:maxLength="5"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_5"
+                            android:onClick="increaseQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_design"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/save_5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/meduim"
+                        android:background="@drawable/input_design"
+                        android:text="Save"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--My product MODIFICATION End-->
+            <LinearLayout
+                android:id="@+id/edit_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/modify_5"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/meduim"
+                    android:background="@drawable/input_design"
+                    android:text="Modify"/>
+
+                <Button
+                    android:id="@+id/delete_5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_design"
+                    android:layout_margin="@dimen/meduim"
+                    android:text="Delete"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--My product 5 End-->
+
+
+
+
+
+
+        <!--My product Next & Previous Partition start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/large"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/myproduct_next_previous_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/prev_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large"
+                android:background="@drawable/input_design"
+                android:text="PREVIOUS"/>
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/large"
+                android:text="NEXT"/>
+        </LinearLayout>
+    </LinearLayout>
+        <!--My product Next & Previous Partition start-->
+    </LinearLayout>
+
+</ScrollView>

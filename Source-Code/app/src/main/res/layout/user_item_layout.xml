@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/xsmall">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/man" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:hint="name"
+            android:minWidth="220dp"
+            android:layout_marginRight="@dimen/meduim"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="jnj"
+            android:textSize="@dimen/large" />
+        <TextView
+            android:id="@+id/userid"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:hint="name"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="jnj"
+            android:textSize="@dimen/large" />
+
+        <ImageView
+            android:id="@+id/userdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/xmeduim"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/arrow" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

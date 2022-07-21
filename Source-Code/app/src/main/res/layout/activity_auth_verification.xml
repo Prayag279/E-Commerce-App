@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--Edittext for getting users phone number-->
+
+    <!--Button for getting OTP-->
+
+    <!--Edittext for getting otp from user-->
+
+
+    <!--button for verifying user OTP-->
+
+    <EditText
+        android:id="@+id/otp_placer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="@dimen/meduim"
+        android:layout_marginEnd="@dimen/meduim"
+        android:layout_marginBottom="508dp"
+        android:background="@drawable/bg"
+        android:hint="Enter OTP"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:padding="@dimen/meduim" />
+
+    <Button
+        android:id="@+id/otp_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/meduim"
+
+        android:layout_marginEnd="@dimen/meduim"
+        android:layout_marginBottom="438dp"
+        android:padding="@dimen/meduim"
+        android:text="Send OTP"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/meduim"
+        android:layout_marginEnd="@dimen/meduim"
+
+        android:layout_marginBottom="368dp"
+        android:padding="@dimen/meduim"
+        android:text="Verify OTP"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="@dimen/meduim"
+        android:layout_marginEnd="@dimen/meduim"
+        android:layout_marginBottom="456dp"
+        android:background="@drawable/bg"
+        android:hint="Enter New Password"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:padding="@dimen/meduim" />
+
+    <EditText
+        android:id="@+id/retype_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="@dimen/meduim"
+        android:layout_marginEnd="@dimen/meduim"
+        android:layout_marginBottom="381dp"
+        android:background="@drawable/bg"
+        android:hint="Retype New Password"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:padding="@dimen/meduim" />
+
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/meduim"
+
+        android:layout_marginEnd="@dimen/meduim"
+        android:layout_marginBottom="309dp"
+        android:padding="@dimen/meduim"
+        android:text="Change Password"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

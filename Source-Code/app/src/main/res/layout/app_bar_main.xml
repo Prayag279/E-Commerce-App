@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/meduim"
+            android:paddingLeft="@dimen/meduim"
+            android:paddingRight="@dimen/meduim">
+            <ImageView
+                android:id="@+id/navigation_open_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/xsmall"
+                android:background="@drawable/grey_circular_border"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/navicon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SellSmart"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/xsmall"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Virtual Shop"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchViewBar"
+                app:searchBackground="@drawable/grey_circular_border">
+            <ImageView
+                android:id="@+id/ClickTOSearchView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/small"
+                android:layout_gravity="right"
+                android:background="@drawable/grey_circular_border"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search"/>
+            </com.miguelcatalan.materialsearchview.MaterialSearchView>
+            <!--<ImageView
+                android:id="@+id/wishlist_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/small"
+                android:background="@drawable/grey_circular_border"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/heart"/>-->
+        </RelativeLayout>
+       <LinearLayout
+           android:id="@+id/search_bar_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small"
+           android:visibility="gone"
+            android:orientation="horizontal">
+                <androidx.appcompat.widget.SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="Search for Products,Brand and more"
+                    android:background="@drawable/grey_circular_border">
+                </androidx.appcompat.widget.SearchView>
+</LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_main" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cart"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/shopping_cart" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

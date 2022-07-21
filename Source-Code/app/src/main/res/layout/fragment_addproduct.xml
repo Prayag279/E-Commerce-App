@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.products.ProductsFragment"
+    android:orientation="vertical">
+    <!--image-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/addproduct"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_layout"
+        android:gravity="center"
+        android:padding="@dimen/xmeduim">
+
+        <Spinner
+            android:id="@+id/categories_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="#00FFFFFF"
+            android:textColorHint="#994F5254"
+            android:textColorLink="#000000" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/brand_layout"
+            android:padding="@dimen/xmeduim">
+
+            <Spinner
+                android:id="@+id/brand_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHighlight="#00FFFFFF"
+                android:textColorHint="#994F5254"
+                android:textColorLink="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/model_layout"
+            android:padding="@dimen/xmeduim">
+
+            <Spinner
+                android:id="@+id/model_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHighlight="#00FFFFFF"
+                android:textColorHint="#994F5254"
+                android:textColorLink="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_layout"
+            android:gravity="center"
+            android:padding="@dimen/xmeduim">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/quantity_layout"
+            android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Product Quantity(Maximum 50)"
+                android:inputType="number"
+                android:padding="@dimen/xmeduim"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:id="@+id/price_layout"
+        android:gravity="center"
+        android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Product Price (MRP)"
+                android:inputType="number"
+                android:padding="@dimen/xmeduim" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/details_layout"
+            android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/product_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Product Details"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/xmeduim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/button_layout"
+            android:padding="@dimen/xmeduim">
+
+            <Button
+                android:id="@+id/main_addproduct_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:fontFamily="@font/coda"
+                android:gravity="center"
+                android:textSize="@dimen/meduim"
+                android:textColor="@color/white"
+                android:padding="@dimen/meduim"
+                android:text="Submit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/or1_layout"
+            android:gravity="center"
+            android:padding="@dimen/xmeduim">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/coda"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/or"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.796" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/request_layout"
+            android:gravity="center"
+            android:padding="@dimen/xmeduim">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Request For New Product"
+                android:background="@drawable/buttons"
+                android:textSize="@dimen/meduim"
+                android:textColor="@color/white"
+                android:padding="@dimen/meduim"
+                android:id="@+id/request_product"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/request_brand_layout"
+            android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/request_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Enter Brand Name"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/xmeduim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/request_model_layout"
+            android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/request_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Emter Model Name"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/xmeduim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/request_details_layout"
+            android:padding="@dimen/xmeduim">
+
+            <EditText
+                android:id="@+id/request_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:ems="19"
+                android:hint="Emter Details or Instructions"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/xmeduim" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/request_button_layout"
+            android:padding="@dimen/xmeduim">
+
+            <Button
+                android:id="@+id/request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:textSize="@dimen/meduim"
+                android:textColor="@color/white"
+                android:padding="@dimen/meduim"
+                android:fontFamily="@font/coda"
+                android:gravity="center"
+                android:text="Send Request"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/or2_layout"
+            android:gravity="center"
+            android:padding="@dimen/xmeduim">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/coda"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/or"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.796" />
+ </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/predefine_layout"
+            android:gravity="center"
+            android:padding="@dimen/xmeduim">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add from Listed Product"
+                android:background="@drawable/buttons"
+                android:textSize="@dimen/meduim"
+                android:textColor="@color/white"
+                android:padding="@dimen/meduim"
+                android:id="@+id/predefine_product"/>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

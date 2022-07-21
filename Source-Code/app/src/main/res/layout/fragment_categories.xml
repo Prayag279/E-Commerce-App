@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:id="@+id/allproducts_scroll_view">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/meduim"
+        android:background="@color/colorPrimary"
+        tools:context=".ui.categories.CategoriesFragment"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/large"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="Mobiles | Tablets"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/mobileforcategories"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="TVs"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/tvsforcategories"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+    <LinearLayout
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="Gaming Console"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/large"
+                android:src="@drawable/game"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/aircooler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="Air Coolers"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/large"
+                android:src="@drawable/cooler"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:id="@+id/computer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="Computers | Laptops"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/large"
+                android:src="@drawable/laptopsforcategoriess"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:id="@+id/ac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/large"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/large"
+                android:text="Air Conditioners"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/large"
+                android:src="@drawable/acforcategoriesss"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cat_line_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+
+
+   <!--All Products_1 Start-->
+    <LinearLayout
+        android:id="@+id/allproducts_1_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+<!--All Products_1 Image Partition Start-->
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/twelvepromax"/>
+    </LinearLayout>
+<!--All Products_1 Image Partition End-->
+
+
+
+<!--All Products_1 Details Partition Start-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+<!--All Products_1 Details Partition(Model) Start-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/allproducts_1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:padding="@dimen/xmeduim"
+                android:text="iPhone 12 Pro Max"/>
+        </LinearLayout>
+<!--All Products_1 Details Partition(Model) End-->
+
+<!--All Products_1 Details Partition(Color) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strike_through_line_vertical_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allproducts_1_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/small"
+                        android:text="Colour"/>
+                </LinearLayout>
+
+            </LinearLayout>
+<!--All Products_1 Details Partition(Color) End-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/large5"
+                android:paddingRight="@dimen/large5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+
+<!--All Products_1 Details Partition(Size) Start-->
+            <LinearLayout
+                android:id="@+id/allproducts_1_variant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/allproducts_1_variant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/small"
+                    android:text="variant"/>
+            </LinearLayout>
+
+<!--All Products_1 Details Partition(Size) End-->
+
+<!--All Products_1 Details Partition(Price) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/allproducts_1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="@dimen/small"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="₹ 1,27,302.00"
+                android:textColor="@color/currentPrice"/>
+
+                <TextView
+                    android:id="@+id/allproducts_1_price_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/xsmall"
+                    android:background="@drawable/strike_through_line"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹1,29,900"/> </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/allproducts_1_sellername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center|left"
+                        android:padding="@dimen/xsmall"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Save ₹2,598 (2%)"/>
+            </LinearLayout>
+<!--All Products_1 Details Partition(Price) End-->
+
+    </LinearLayout>
+<!--All Products_1 Details Partition End-->
+
+
+
+<!--All Products_1 Button Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xmeduim"
+            android:paddingRight="@dimen/xmeduim"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allproducts_1_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Add To Wishlist"/>
+            <Button
+                android:id="@+id/allproducts_1_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart"/>
+
+        </LinearLayout>
+<!--All Products_1 Button Partition End-->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/allproducts_1_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+<!--All Products_1 End-->
+
+<!--All Products_2 Start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/allproducts_2_box"
+        android:layout_height="wrap_content"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--All Products_1 Image Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/twelvepromax"/>
+        </LinearLayout>
+        <!--All Products_1 Image Partition End-->
+
+
+
+        <!--All Products_1 Details Partition Start-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--All Products_1 Details Partition(Model) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/allproducts_2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|top"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xmeduim"
+                    android:text="iPhone 12 Pro Max"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Model) End-->
+
+            <!--All Products_1 Details Partition(Color) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strike_through_line_vertical_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allproducts_2_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/small"
+                        android:text="Colour"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Color) End-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/large5"
+                android:paddingRight="@dimen/large5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) Start-->
+            <LinearLayout
+                android:id="@+id/allproducts_2_variant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/allproducts_2_variant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/small"
+                    android:text="variant"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) End-->
+
+            <!--All Products_1 Details Partition(Price) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_2_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹ 1,27,302.00"
+                    android:textColor="@color/currentPrice"/>
+
+                <TextView
+                    android:id="@+id/allproducts_2_price_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/xsmall"
+                    android:background="@drawable/strike_through_line"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹1,29,900"/> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_2_sellername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/xsmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Save ₹2,598 (2%)"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Price) End-->
+
+        </LinearLayout>
+        <!--All Products_1 Details Partition End-->
+
+
+
+        <!--All Products_1 Button Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xmeduim"
+            android:paddingRight="@dimen/xmeduim"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allproducts_2_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Add To Wishlist"/>
+            <Button
+                android:id="@+id/allproducts_2_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart"/>
+
+        </LinearLayout>
+        <!--All Products_1 Button Partition End-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/allproducts_2_line"
+        android:gravity="center|left"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+<!--All Products_2 End-->
+
+    <!--All Products_3 Start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allproducts_3_box"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--All Products_1 Image Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/twelvepromax"/>
+        </LinearLayout>
+        <!--All Products_1 Image Partition End-->
+
+
+
+        <!--All Products_1 Details Partition Start-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--All Products_1 Details Partition(Model) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/allproducts_3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|top"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xmeduim"
+                    android:text="iPhone 12 Pro Max"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Model) End-->
+
+            <!--All Products_1 Details Partition(Color) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strike_through_line_vertical_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allproducts_3_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/small"
+                        android:text="Colour"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Color) End-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/large5"
+                android:paddingRight="@dimen/large5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) Start-->
+            <LinearLayout
+                android:id="@+id/allproducts_3_variant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/allproducts_3_variant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/small"
+                    android:text="Size"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) End-->
+
+            <!--All Products_1 Details Partition(Price) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_3_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹ 1,27,302.00"
+                    android:textColor="@color/currentPrice"/>
+
+                <TextView
+                    android:id="@+id/allproducts_3_price_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/xsmall"
+                    android:background="@drawable/strike_through_line"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹1,29,900"/> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_3_sellername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/xsmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Save ₹2,598 (2%)"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Price) End-->
+
+        </LinearLayout>
+        <!--All Products_1 Details Partition End-->
+
+
+
+        <!--All Products_1 Button Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xmeduim"
+            android:paddingRight="@dimen/xmeduim"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allproducts_3_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Add To Wishlist"/>
+            <Button
+                android:id="@+id/allproducts_3_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart"/>
+
+        </LinearLayout>
+        <!--All Products_1 Button Partition End-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:id="@+id/allproducts_3_line"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+    <!--All Products_3 End-->
+
+
+    <!--All Products_4 Start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allproducts_4_box"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--All Products_1 Image Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/twelvepromax"/>
+        </LinearLayout>
+        <!--All Products_1 Image Partition End-->
+
+
+
+        <!--All Products_1 Details Partition Start-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--All Products_1 Details Partition(Model) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/allproducts_4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|top"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xmeduim"
+                    android:text="iPhone 12 Pro Max"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Model) End-->
+
+            <!--All Products_1 Details Partition(Color) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strike_through_line_vertical_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allproducts_4_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/small"
+                        android:text="Colour"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Color) End-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/large5"
+                android:paddingRight="@dimen/large5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) Start-->
+            <LinearLayout
+                android:id="@+id/allproducts_4_variant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/allproducts_4_variant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/small"
+                    android:text="variant"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) End-->
+
+            <!--All Products_1 Details Partition(Price) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_4_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹ 1,27,302.00"
+                    android:textColor="@color/currentPrice"/>
+
+                <TextView
+                    android:id="@+id/allproducts_4_price_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/xsmall"
+                    android:background="@drawable/strike_through_line"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹1,29,900"/> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_4_sellername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/xsmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Save ₹2,598 (2%)"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Price) End-->
+
+        </LinearLayout>
+        <!--All Products_1 Details Partition End-->
+
+
+
+        <!--All Products_1 Button Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xmeduim"
+            android:paddingRight="@dimen/xmeduim"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allproducts_4_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Add To Wishlist"/>
+            <Button
+                android:id="@+id/allproducts_4_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart"/>
+
+        </LinearLayout>
+        <!--All Products_1 Button Partition End-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:id="@+id/allproducts_4_line"
+        android:padding="@dimen/xsmall"
+        android:background="@drawable/strike_through_line"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+    <!--All Products_4 End-->
+
+
+    <!--All Products_5 Start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allproducts_5_box"
+        android:background="@drawable/products_background"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--All Products_1 Image Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/products_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/twelvepromax"/>
+        </LinearLayout>
+        <!--All Products_1 Image Partition End-->
+
+
+
+        <!--All Products_1 Details Partition Start-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--All Products_1 Details Partition(Model) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/allproducts_5_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|top"
+                    android:textStyle="bold"
+                    android:padding="@dimen/xmeduim"
+                    android:text="iPhone 12 Pro Max"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Model) End-->
+
+            <!--All Products_1 Details Partition(Color) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/strike_through_line_vertical_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allproducts_5_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="@dimen/small"
+                        android:text="Colour"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Color) End-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/large5"
+                android:paddingRight="@dimen/large5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) Start-->
+            <LinearLayout
+                android:id="@+id/allproducts_5_variant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/allproducts_5_variant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/small"
+                    android:text="variant"/>
+            </LinearLayout>
+
+            <!--All Products_1 Details Partition(Size) End-->
+
+            <!--All Products_1 Details Partition(Price) Start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_5_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹ 1,27,302.00"
+                    android:textColor="@color/currentPrice"/>
+
+                <TextView
+                    android:id="@+id/allproducts_5_price_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="@dimen/xsmall"
+                    android:background="@drawable/strike_through_line"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="₹1,29,900"/> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/allproducts_5_sellername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/xsmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Save ₹2,598 (2%)"/>
+            </LinearLayout>
+            <!--All Products_1 Details Partition(Price) End-->
+
+        </LinearLayout>
+        <!--All Products_1 Details Partition End-->
+
+
+
+        <!--All Products_1 Button Partition Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xmeduim"
+            android:paddingRight="@dimen/xmeduim"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/strike_through_line_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allproducts_5_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/meduim"
+                android:text="Add To Wishlist"/>
+            <Button
+                android:id="@+id/allproducts_5_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
+                android:layout_margin="@dimen/meduim"
+                android:background="@drawable/input_design"
+                android:text="Add To Cart"/>
+
+        </LinearLayout>
+        <!--All Products_1 Button Partition End-->
+
+    </LinearLayout>
+
+    <!--All Products_5 End-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/large"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/myproduct_next_previous_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/all_products_prev_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large"
+                android:background="@drawable/input_design"
+                android:text="PREVIOUS"/>
+
+            <Button
+                android:id="@+id/all_products_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:layout_margin="@dimen/large"
+                android:text="NEXT"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersprofileActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="@dimen/xxsmall"
+            tools:context=".ui.profile.ProfileFragment">
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="@dimen/xxsmall"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageButton
+                        android:id="@+id/user_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/xsmall"
+                        android:paddingTop="@dimen/xsmall"
+                        android:paddingRight="@dimen/xsmall"
+                        android:paddingBottom="@dimen/xsmall"
+                        android:src="@drawable/ic_action_navigation_arrow_back"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/order_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/coda"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/large1"
+                        android:paddingTop="@dimen/xsmall"
+                        android:paddingRight="@dimen/large1"
+                        android:paddingBottom="@dimen/xsmall"
+                        android:text="Profile"
+                        android:textAllCaps="false"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/meduim">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/man2" />
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="ID"
+                    android:textSize="@dimen/meduim" />
+
+                <EditText
+                    android:id="@+id/user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/coda"
+                    android:gravity="left"
+                    android:inputType="textPersonName"
+                    android:text="Sagar Parmar"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="Name"
+                    android:textSize="@dimen/meduim" />
+
+                <EditText
+                    android:id="@+id/profile_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/coda"
+                    android:gravity="left"
+                    android:inputType="textPersonName"
+                    android:text="Sagar Parmar"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Mobile Number"
+                    android:textSize="@dimen/meduim" />
+
+                <EditText
+                    android:id="@+id/profile_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/coda"
+                    android:gravity="left"
+                    android:inputType="phone"
+                    android:text="+91 7043212340"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Password"
+                    android:textSize="@dimen/meduim" />
+
+                <EditText
+                    android:id="@+id/profile_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/coda"
+                    android:gravity="left"
+                    android:inputType="phone"
+                    android:text="abcd"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Type"
+                    android:textSize="@dimen/meduim" />
+
+                <EditText
+                    android:id="@+id/profile_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/coda"
+                    android:gravity="left"
+                    android:text="Buyer"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/strike_through_line_vertical"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/xmeduim">
+
+                <Button
+                    android:id="@+id/make_changes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:text="Edit Details"
+                    android:textSize="@dimen/meduim" />
+
+                <Button
+                    android:id="@+id/save_changes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:text="Save Changes"
+                    android:textSize="@dimen/meduim" />
+
+                <Button
+                    android:id="@+id/Delete_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:text="Delete Account"
+                    android:textSize="@dimen/meduim" />
+
+
+            </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

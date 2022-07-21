@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="@dimen/xxsmall"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:padding="@dimen/small"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/paymnets_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:paddingTop="@dimen/xsmall"
+                android:textSize="20sp"
+                android:paddingBottom="@dimen/xsmall"
+                android:paddingLeft="@dimen/xsmall"
+                android:paddingRight="@dimen/xsmall"
+                android:src="@drawable/ic_action_navigation_arrow_back"/>
+            <TextView
+                android:id="@+id/order_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/coda"
+                android:textAllCaps="false"
+                android:paddingTop="@dimen/xsmall"
+                android:paddingBottom="@dimen/xsmall"
+                android:paddingLeft="@dimen/large1"
+                android:paddingRight="@dimen/large1"
+                android:text="Payment Options"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/payment"/>
+
+    <RadioGroup
+        android:id="@+id/groupradio"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/large"
+        android:paddingRight="@dimen/large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cod"
+        android:padding="@dimen/meduim"
+        android:text="Cash On Delivery"
+        android:textSize="@dimen/large"/>
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cc_db"
+        android:padding="@dimen/meduim"
+        android:text="Credit Card / Debit Card"
+        android:textSize="@dimen/large"/>
+
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upi"
+        android:padding="@dimen/meduim"
+        android:text="UPI Payments"
+        android:textSize="@dimen/large"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:padding="@dimen/meduim"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/paymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/buttons"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/coda"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/small"
+            android:text="Payment Now"/>
+    </LinearLayout>
+
+    <!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:background="@null"
+        android:text="kamal bunkar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UPI ID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upi_id"
+        android:background="@null"
+        android:text="kamal.bunkar07@okaxis"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/amount_et"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:text="5"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/note"
+        android:background="@null"
+        android:text="Test UPI Payment"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/send"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pay Now"/>-->
+</LinearLayout>
