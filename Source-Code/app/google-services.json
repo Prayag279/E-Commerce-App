@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "263863249680",
+    "firebase_url": "https://perfect-electronics-53b36.firebaseio.com",
+    "project_id": "perfect-electronics-53b36",
+    "storage_bucket": "perfect-electronics-53b36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263863249680:android:14bf143f76b94120cfd395",
+        "android_client_info": {
+          "package_name": "com.example.perfectelectronics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263863249680-o5lliosntsropivsq0oavt91clajssok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.perfectelectronics",
+            "certificate_hash": "f1eece2cb997760e8646981cb438052c16e3c26e"
+          }
+        },
+        {
+          "client_id": "263863249680-iflvr92h2nb570em72a661ehpitpkhn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfX5cs6zN0vsarnYW1ev1t5_Ht_a5PX3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263863249680-iflvr92h2nb570em72a661ehpitpkhn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
