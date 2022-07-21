@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alegreya_sans_sc_thin</item>
+        <item>@font/armata</item>
+        <item>@font/cagliostro</item>
+        <item>@font/cairo_bold</item>
+        <item>@font/coda</item>
+        <item>@font/josefin_sans_semibold</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/open_sans</item>
+        <item>@font/raleway</item>
+        <item>@font/roboto_condensed_regular</item>
+        <item>@font/rock_salt</item>
+        <item>@font/shojumaru</item>
+        <item>@font/tenali_ramakrishna</item>
+    </array>
+</resources>

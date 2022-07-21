@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+
+            android:title="@string/menu_home"
+            android:iconTint="@android:color/white"/>
+    </group>
+
+    <item android:title=" " android:id="@+id/blank2"></item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/categories"
+            android:title="@string/menu_categories"
+            android:iconTint="@android:color/white"/>
+    </group>
+
+    <item android:title=" " android:id="@+id/blank3">    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_orders"
+            android:icon="@drawable/order"
+            android:title="@string/menu_my_orders"
+            android:iconTint="@android:color/white"/>
+
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/shopping_cart"
+            android:title="@string/menu_my_cart"
+            android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_my_wish_list"
+            android:icon="@drawable/wishlist"
+            android:title="@string/menu_my_wish_list"
+            android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_my_notificatios"
+            android:icon="@drawable/notifications"
+            android:title="@string/menu_my_notificatios"
+            android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/menu_my_profile"
+            android:iconTint="@android:color/white"/>
+    </group>
+
+
+    <item android:title=" " android:id="@+id/blank4"></item>
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_sell_on_sellsmart"
+        android:icon="@drawable/sellonsellmart"
+        android:title="@string/menu_sell_on_sellsmart"
+        android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_myproduct"
+            android:icon="@drawable/myproduct"
+            android:title="@string/menu_my_product"
+            android:iconTint="@android:color/white"/>
+
+            <item
+                android:id="@+id/nav_addproduct"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="@string/menu_addproduct"
+                android:iconTint="@android:color/white"/>
+
+
+    </group>
+
+    <item android:title=" " android:id="@+id/blank5"></item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/signout"
+            android:title="@string/menu_logout"
+            android:iconTint="@android:color/white"/>
+    </group>
+</menu>
